@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ActivityDevolucao"
+    android:id="@+id/ActivityDevolucao">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logo_almo"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/logo_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textTituloDevolucao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="90dp"
+        android:gravity="center"
+        android:fontFamily="@font/breeseriffont"
+        android:text="Devolução de Itens"
+        android:textColor="@color/blueProj"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão de devolução por QR Code -->
+    <Button
+        android:id="@+id/buttonDevolucaoQr"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:text="Devolver por QR Code"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="@font/breeseriffont"
+        android:padding="15dp"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/textTituloDevolucao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão de devolução por ID -->
+    <Button
+        android:id="@+id/buttonDevolucaoId"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/breeseriffont"
+        android:padding="15dp"
+        android:text="Devolver por ID"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/buttonDevolucaoQr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo para digitar o ID -->
+    <EditText
+        android:id="@+id/editTextIdDevolucao"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Digite o ID do item para devolução"
+        android:fontFamily="@font/breeseriffont"
+        android:background="@drawable/edittext_border"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/buttonDevolucaoId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão Confirmar Devolução -->
+    <Button
+        android:id="@+id/buttonConfirmarDevolucao"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/breeseriffont"
+        android:padding="15dp"
+        android:text="Confirmar Devolução"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editTextIdDevolucao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/textResultadoDevolucao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Resultado aparecerá aqui..."
+        android:gravity="center"
+        android:textColor="#000000"
+        android:fontFamily="@font/breeseriffont"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintTop_toBottomOf="@id/buttonConfirmarDevolucao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

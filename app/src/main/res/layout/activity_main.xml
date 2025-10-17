@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity"
+    android:id="@+id/MainActiviy">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo_almo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/app_name" />
+
+    <!-- Texto Bem-vindo -->
+    <TextView
+        android:id="@+id/textBemvindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/breeseriffont"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/bem_vindo"
+        android:textColor="@color/blueProj"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <!-- Campo Login -->
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/breeseriffont"
+        android:hint="Login"
+        android:textColor="@android:color/black"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/textBemvindo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo Senha -->
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/breeseriffont"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="Senha"
+        android:textColor="@android:color/black"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittext_border"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão Entrar -->
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="40dp"
+        android:textSize="22sp"
+        android:text="Entrar"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:padding="15dp"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/editTextSenha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
