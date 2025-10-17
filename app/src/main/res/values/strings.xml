@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProjetoAlmoxarifadoMob</string>
+    <string name="bem_vindo">Bem-vindo!</string>
+    <string name="logo_desc">Logo da Stocky</string>
+    <string name="icon_user">Ícone de usuário</string>
+    <string name="edit_name">Editar nome</string>
+
+
+</resources>
