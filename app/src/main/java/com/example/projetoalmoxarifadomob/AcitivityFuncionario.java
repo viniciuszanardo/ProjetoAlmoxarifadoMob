@@ -9,10 +9,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.view.KeyEvent;
-<<<<<<< HEAD
-=======
 import android.view.View;
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,12 +27,7 @@ public class AcitivityFuncionario extends AppCompatActivity {
     private static final int PICK_IMAGE = 1;
 
     private ImageView imgFuncionario;
-<<<<<<< HEAD
     private Button btnCadastro, btnConsultar, btnDevolucao;
-=======
-    private Button btnCadastro;
-    private Button btnConsultar;
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
     private TextView txtFuncionario;
     private EditText etFuncionario;
 
@@ -49,7 +41,6 @@ public class AcitivityFuncionario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_funcionario);
 
-<<<<<<< HEAD
         // Inicializa views
         imgFuncionario = findViewById(R.id.imgIconeUsuario);
         btnCadastro = findViewById(R.id.btnCadastro);
@@ -57,13 +48,6 @@ public class AcitivityFuncionario extends AppCompatActivity {
         btnDevolucao = findViewById(R.id.btnDevolver);
         txtFuncionario = findViewById(R.id.txtFuncionario);
         etFuncionario = findViewById(R.id.etFuncionario);
-=======
-        imgFuncionario = findViewById(R.id.imgIconeUsuario);
-        btnCadastro = findViewById(R.id.btnCadastro);
-        txtFuncionario = findViewById(R.id.txtFuncionario);
-        etFuncionario = findViewById(R.id.etFuncionario);
-        btnConsultar = findViewById(R.id.btnConsultar);
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
 
         // Inicializa SharedPreferences
         prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
@@ -86,13 +70,8 @@ public class AcitivityFuncionario extends AppCompatActivity {
         // Ao clicar no nome, exibe EditText
         txtFuncionario.setOnClickListener(v -> {
             etFuncionario.setText(txtFuncionario.getText().toString());
-<<<<<<< HEAD
-            txtFuncionario.setVisibility(android.view.View.GONE);
-            etFuncionario.setVisibility(android.view.View.VISIBLE);
-=======
             txtFuncionario.setVisibility(View.GONE);
             etFuncionario.setVisibility(View.VISIBLE);
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
             etFuncionario.requestFocus();
         });
 
@@ -108,23 +87,14 @@ public class AcitivityFuncionario extends AppCompatActivity {
                     prefs.edit().putString(KEY_NOME, novoNome).apply();
                 }
 
-<<<<<<< HEAD
-                etFuncionario.setVisibility(android.view.View.GONE);
-                txtFuncionario.setVisibility(android.view.View.VISIBLE);
-=======
                 etFuncionario.setVisibility(View.GONE);
                 txtFuncionario.setVisibility(View.VISIBLE);
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
                 return true;
             }
             return false;
         });
 
-<<<<<<< HEAD
         // Abrir galeria ao clicar na imagem
-=======
-        // Abrir galeria
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
         imgFuncionario.setOnClickListener(v -> abrirGaleria());
 
         // Botão de Cadastro de Itens
@@ -138,7 +108,6 @@ public class AcitivityFuncionario extends AppCompatActivity {
             Intent intent = new Intent(AcitivityFuncionario.this, ActivityConsulta.class);
             startActivity(intent);
         });
-<<<<<<< HEAD
 
         // Botão de Devolução de Itens
         btnDevolucao.setOnClickListener(v -> {
@@ -148,10 +117,6 @@ public class AcitivityFuncionario extends AppCompatActivity {
     }
 
     // Abrir galeria
-=======
-    }
-
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
     private void abrirGaleria() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/*");

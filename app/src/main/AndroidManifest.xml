@@ -2,10 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Recursos -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
+    <!-- Permissões -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
@@ -21,34 +23,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoAlmoxarifadoMob">
+
+        <!-- Activities -->
         <activity
-<<<<<<< HEAD
             android:name=".ActivityDevolucao"
             android:exported="false" />
+
         <activity
-=======
->>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
             android:name=".ActivityConsulta"
             android:exported="false" />
+
         <activity
             android:name=".ActivityLeitorQr"
             android:exported="false" />
+
         <activity
             android:name=".ActivityCadastroItens"
             android:exported="false" />
-        <activity
-            android:name=".ActivityCadastroItens"
-            android:exported="false"
-            tools:ignore="DuplicateActivity" />
+
         <activity
             android:name=".AcitivityFuncionario"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
