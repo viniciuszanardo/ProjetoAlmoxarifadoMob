@@ -9,7 +9,10 @@
     tools:context=".ActivityConsulta"
     android:id="@+id/ActivityConsulta">
 
+<<<<<<< HEAD
     <!-- Logo -->
+=======
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="90dp"
@@ -30,7 +33,11 @@
         android:gravity="center"
         android:text="Consulta de Itens"
         android:textColor="@color/blueProj"
+<<<<<<< HEAD
         android:textSize="26sp"
+=======
+        android:textSize="26dp"
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
         app:layout_constraintTop_toBottomOf="@id/imgLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -39,6 +46,7 @@
     <Button
         android:id="@+id/buttonConsultaQr"
         android:layout_width="0dp"
+<<<<<<< HEAD
         android:layout_height="75dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="60dp"
@@ -49,11 +57,23 @@
         android:textStyle="bold"
         android:fontFamily="@font/breeseriffont"
         android:padding="15dp"
+=======
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:text="Consultar por QR Code"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
         android:backgroundTint="@color/orange"
         app:layout_constraintTop_toBottomOf="@id/textTituloConsulta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+<<<<<<< HEAD
     <!-- Botão de consulta por ID -->
     <Button
         android:id="@+id/buttonConsultaId"
@@ -73,11 +93,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+=======
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
     <!-- Campo para digitar o ID -->
     <EditText
         android:id="@+id/editTextIdItem"
         android:layout_width="0dp"
+<<<<<<< HEAD
         android:layout_height="55dp"
+=======
+        android:layout_height="50dp"
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginTop="20dp"
@@ -86,8 +112,30 @@
         android:background="@drawable/edittext_border"
         android:padding="10dp"
         android:inputType="number"
+<<<<<<< HEAD
         android:textColor="#000000"
         app:layout_constraintTop_toBottomOf="@id/buttonConsultaId"
+=======
+        app:layout_constraintTop_toBottomOf="@id/buttonConsultaQr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão de consulta por ID -->
+    <Button
+        android:id="@+id/buttonConsultaId"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="Consultar por ID"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/editTextIdItem"
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -101,12 +149,20 @@
         android:layout_marginTop="25dp"
         android:text="Resultado aparecerá aqui..."
         android:gravity="center"
+<<<<<<< HEAD
         android:textColor="#000000"
         android:fontFamily="@font/breeseriffont"
         android:textSize="18sp"
         android:padding="15dp"
         android:background="@drawable/edittext_border"
         app:layout_constraintTop_toBottomOf="@id/editTextIdItem"
+=======
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintTop_toBottomOf="@id/buttonConsultaId"
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

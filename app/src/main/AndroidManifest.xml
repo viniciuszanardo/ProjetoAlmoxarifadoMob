@@ -22,9 +22,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoAlmoxarifadoMob">
         <activity
+<<<<<<< HEAD
             android:name=".ActivityDevolucao"
             android:exported="false" />
         <activity
+=======
+>>>>>>> 87077cae22329c2e4a830694d71c57d08304cab3
             android:name=".ActivityConsulta"
             android:exported="false" />
         <activity
