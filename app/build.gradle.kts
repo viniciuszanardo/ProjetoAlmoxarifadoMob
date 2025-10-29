@@ -37,11 +37,20 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-//qrCode
+    //qrCode
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0");
+    implementation("com.google.zxing:core:3.5.3");
 
-    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
-    implementation("com.google.zxing:core:3.5.3")
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
+    // Coroutines (para chamadas assíncronas)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
+
+    // OkHttp (log de requisições)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
